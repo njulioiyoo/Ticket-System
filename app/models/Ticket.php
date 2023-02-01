@@ -29,6 +29,10 @@ class Ticket
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
 
+        echo "Ticket codes successfully generated!" . PHP_EOL;
+        foreach ($codes as $code) {
+            echo $code . PHP_EOL;
+        }
         return $codes;
     }
 

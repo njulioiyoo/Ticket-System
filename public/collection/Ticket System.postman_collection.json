@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "514bc256-e1cd-43db-b22f-0345f846ef31",
+		"name": "Ticket System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6136689"
+	},
+	"item": [
+		{
+			"name": "Check Ticket Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://detik.web.local/api/check-ticket-status?eventId=3&ticketCode=DTK5N0FRLC",
+					"protocol": "http",
+					"host": [
+						"detik",
+						"web",
+						"local"
+					],
+					"path": [
+						"api",
+						"check-ticket-status"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "3"
+						},
+						{
+							"key": "ticketCode",
+							"value": "DTK5N0FRLC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Ticket Status",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://detik.web.local/api/update-ticket-status?eventId=3&ticketCode=DTK5N0FRLC&status=claimed",
+					"protocol": "http",
+					"host": [
+						"detik",
+						"web",
+						"local"
+					],
+					"path": [
+						"api",
+						"update-ticket-status"
+					],
+					"query": [
+						{
+							"key": "eventId",
+							"value": "3"
+						},
+						{
+							"key": "ticketCode",
+							"value": "DTK5N0FRLC"
+						},
+						{
+							"key": "status",
+							"value": "claimed"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
